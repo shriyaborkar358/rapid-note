@@ -1,0 +1,41 @@
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.add-show-btn{
+    padding: 10px 30px;
+    margin: 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.features-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 350px){
+    .heading{
+        font-size: 25px;
+    }
+
+    .button-container{
+        position: fixed;
+        bottom: 15px;
+        justify-content: space-between;
+    }
+
+    .add-show-btn{
+        padding: 6px 15px;
+        margin: 10px;
+        font-size: 13px;
+    }
+
+    .features-container{
+        justify-content: space-around;
+    }
+}
