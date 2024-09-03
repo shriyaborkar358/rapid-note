@@ -1,5 +1,6 @@
 import React from "react";
 import "./NoteCard.css";
+import IconDelete from "./dlete.png"
 
 function NoteCategory({ category }) {
   const CATEGORY_EMOJI = {
@@ -28,6 +29,8 @@ function NoteCard({ title, description, emoji, category }) {
         <p className="note-card-description">{description}</p>
 
         <NoteCategory category={category} />
+
+        <img src={IconDelete} className="note-delete" alt="Delete"/>
       </div>
     </div>
   );

@@ -1,13 +1,14 @@
 .notes-container{
     padding: 10px;
-    width: 90%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
     height: 80vh;
     overflow-y: scroll ;
 }
 
 @media screen and (min-width: 330px) and (max-width: 550px){
     .notes-container{
-        height: 80vh;
-        width: 90%;
+        width: 95%;
     }
 }

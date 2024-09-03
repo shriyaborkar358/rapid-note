@@ -2,8 +2,7 @@
   background-color: white;
   display: flex;
   align-items: center;
-  margin: 30px auto;
-  width: 70%;
+  margin: 20px auto;
   box-shadow: 0 0 5px gray;
   padding: 20px;
   border-radius: 10px;
@@ -65,11 +64,23 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+.note-delete{
+  position: absolute;
+  bottom: 10px;
+  right: 55px;
+  height: 40px;
+}
+
+.note-delete:hover{
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
 @media screen and (min-width: 330px)and (max-width: 550px){
   .note-card {
-    margin: 10px auto;
-    width: 90%;
-    padding: 10px;
+    margin: 20px auto;
+    width: 95%;
+    padding: 15px 10px;
   }
 
   .note-card-emoji {
@@ -96,6 +107,12 @@
 
 .note-card-description {
   font-size: 12px;
+}
+
+.note-delete{
+  bottom: 5px;
+  right: 10px;
+  height: 25px;
 }
 
 }
