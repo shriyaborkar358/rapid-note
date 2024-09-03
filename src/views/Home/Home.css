@@ -5,7 +5,8 @@
 
 .add-show-btn{
     padding: 10px 30px;
-    margin: 30px;
+    display: block;
+    margin: 30px ;
     border: none;
     border-radius: 20px;
     font-size: 18px;
