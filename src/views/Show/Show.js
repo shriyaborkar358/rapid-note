@@ -22,10 +22,11 @@ function Show() {
 
       <div className='notes-container'>
         {
-          notes.map((notes) => {
+          notes.map((notes, index) => {
 
             const { title, description, category, emoji } = notes
             return <NoteCard
+              index={index}
               title={title}
               description={description}
               category={category}
