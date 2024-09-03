@@ -57,7 +57,7 @@
     transform: scale(1.1);
 }
 
-@media screen and (min-width:330px )and (max-width:500px){
+@media screen and (min-width:300px )and (max-width:500px){
     .heading{
         font-size: 28px;
     }
