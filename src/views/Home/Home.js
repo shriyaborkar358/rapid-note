@@ -38,13 +38,15 @@ function Home() {
         <div className='features-container'>
 
           {
-            FEATURES.map((feature) => {
+            FEATURES.map((feature, i) => {
 
               const { featureImg, featureText } = feature
               return (
                 <FeatureCard
                   featureImg={featureImg}
-                  featureText={featureText} />
+                  featureText={featureText} 
+                  key={i}
+                  />
               )
             })
           }

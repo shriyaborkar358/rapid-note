@@ -19,9 +19,9 @@
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 300px)and (max-width: 550){
+@media screen and (min-width: 350px)and (max-width: 550){
     .heading{
-        font-size: 25px;
+        font-size: 55px;
     }
 
     .button-container{
@@ -30,10 +30,10 @@
         justify-content: space-between;
     }
 
+
     .add-show-btn{
         padding: 6px 15px;
-        margin: 10px;
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .features-container{

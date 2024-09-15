@@ -31,6 +31,7 @@ function Show() {
               description={description}
               category={category}
               emoji={emoji}
+              key={index}
             />
           })
         }
