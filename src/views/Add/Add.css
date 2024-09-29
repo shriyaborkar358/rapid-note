@@ -15,6 +15,7 @@
     width: 90%;
     padding: 10px 15px;
     font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 10px;
     border: 1px dotted blue;
 }
@@ -50,6 +51,7 @@
     padding: 10px 30px;
     border-radius: 10px;
     font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: block;
     margin: 30px auto;
     border: none;

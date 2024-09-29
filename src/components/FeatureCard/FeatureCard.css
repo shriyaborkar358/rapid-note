@@ -9,10 +9,15 @@
 }
 
 .feature-img {
-  height: 100px;
+  height: 120px;
   display: block;
   margin: 10px auto;
   padding: 10px 0;
+}
+
+.feature-img:hover{
+  transition: 0.3s;
+  transform: scale(1.07);
 }
 
 .feature-text {

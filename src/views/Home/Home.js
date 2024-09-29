@@ -32,7 +32,7 @@ function Home() {
   return (
     <div>
       <h1 className='text-center heading'>📘 Rapid Note 📘</h1>
-      <p className='highlight text-center'>Small tasks or big goals, write them down and get them done. From big goals to small tasks, note it all!{" "}
+      <p className='highlight text-center'>Small tasks or big goals, write them down and get them done!{" "}
       </p>
 
       <div>
