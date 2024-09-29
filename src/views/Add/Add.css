@@ -5,6 +5,7 @@
     box-shadow: 0 0 10px rgb(70, 69, 69);
     padding: 15px 25px;
     border-radius: 3px 50px;
+    background-color: rgb(238, 236, 240);
 }
 
 .add-input{
@@ -16,7 +17,11 @@
     font-size: 18px;
     border-radius: 10px;
     border: 1px dotted blue;
-    cursor: pointer;
+}
+
+.add-input:focus,
+.add-input:active {
+  outline: none;
 }
 
 .add-input-emoji{
@@ -62,16 +67,23 @@
         font-size: 28px;
     }
 
+    .input-form{
+        width: 60%;
+        padding: 10px 20px;
+        border-radius: 3px 50px;
+        background-color: rgb(238, 236, 240);
+    }
+
     .add-input{
         margin: 15px auto;
-        width: 90%;
+        width: 85%;
         padding: 7px 10px;
         font-size: 15px;
         border-radius: 15px;
     }
 
     .category{
-        width: 98%;
+        width: 100%;
     }
 
     .emoji-picker{

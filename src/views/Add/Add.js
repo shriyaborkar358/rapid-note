@@ -14,27 +14,34 @@ function Add() {
   const [openEmojiDailog, setOpenEmojiDailog] = useState(false);
 
   const addNotes = () => {
+    if (!title || !description || !category || !emoji) {
+        return  toast.error("Please add a note!")
+    }
     const notes = JSON.parse(localStorage.getItem("notes")) || [];
-
+  
     const notesObject = {
       title,
       description,
       category,
       emoji,
     };
-
+  
     notes.push(notesObject);
-
+  
     localStorage.setItem("notes", JSON.stringify(notes));
+  
+    toast.success("Note added successfully!");
+  
+    setTitle("");
+    setDescription("");
+    setCategory("");
+    setEmoji("");
 
-    toast.success("Note added successfully!")
-
-    setTitle("")
-    setDescription("")
-    setCategory("")
-    setEmoji("")
+    setTimeout(() => {
+      window.location.href = "/show";
+    }, 2000);
   };
-
+  
   return (
     <div>
       <h1 className="text-center heading">Add Note 📝</h1>
@@ -100,11 +107,11 @@ function Add() {
         {emoji ? emoji : "Select Emoji"}
       </div>
 
-      <Link to="/show" className="btn-container">
+   
         <button type="button" className="add-btn" onClick={addNotes}>
-          + Add Note
+           Add Note 
         </button>
-      </Link>
+      
       </form>
     </div>
   );
