@@ -37,11 +37,13 @@ function Add() {
 
   return (
     <div>
-      <h1 className="text-center heading">✍️ Add Note</h1>
+      <h1 className="text-center heading">Add Note 📝</h1>
 
       <Link to="/">
         <HomeButton />
       </Link>
+
+      <form className="input-form">
 
       <input
         type="text"
@@ -88,7 +90,7 @@ function Add() {
           setEmoji(emojiObject.emoji);
           setOpenEmojiDailog(false);
         }}
-        className="emoji-picker"
+        className="emoji-picker"  
       />
 
       <div
@@ -103,6 +105,7 @@ function Add() {
           + Add Note
         </button>
       </Link>
+      </form>
     </div>
   );
 }
